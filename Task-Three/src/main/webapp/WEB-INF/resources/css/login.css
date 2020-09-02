@@ -1,0 +1,70 @@
+body,
+#signIn,
+#forgotPassword,
+#account,
+#signUp,
+.btn,
+.form-control {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+}
+.container {
+  padding: 20px;
+  height: auto !important;
+  width: 400px;
+  margin: 100px auto;
+  margin-top: 200px;
+  position: relative;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  min-height: 38px;
+  padding-left: 5px;
+  box-shadow: none !important;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+#checkbox {
+  padding-left: 15px;
+}
+#forgotPassword {
+  color: gray;
+  padding-left: 5px;
+}
+#showButtons {
+  padding-left: 150px;
+}
+#account {
+  color: lightslategrey;
+  padding-left: 10px;
+}
+#signUp {
+  color: rgb(34, 185, 255);
+  margin-left: 5px;
+}
+
+label {
+  color: lightslategray;
+}
+label input {
+  display: none;
+}
+label span {
+  height: 17px;
+  width: 17px;
+  border: 2px solid dimgray;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
