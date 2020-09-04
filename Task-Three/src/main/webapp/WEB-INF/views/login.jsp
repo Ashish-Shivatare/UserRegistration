@@ -1,5 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page  isELIgnored="false"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +31,6 @@
 <body style="background-color: orange;">
 
 	<div class="container">
-
 		<form action="loginForm" method="post">
 			<div class="form-group">
 				<h4 id="signIn">Sign In</h4>
@@ -48,7 +47,7 @@
 			</div>
 
 			<div id="checkbox" class="form-group">
-				<label><input name="userRemember" type="checkbox" /><span></span>
+				<label><input name="remember" type="checkbox" /><span></span>
 					Remember Me</label>
 				<h6 id="forgotPassword">Forgot pwd?</h6>
 			</div>

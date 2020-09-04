@@ -9,16 +9,18 @@ import com.user.model.User;
 public class UserService {
 	@Autowired
 	private UserDao userDao;
-	
+
 	public int createUser(User user) {
 		return this.userDao.saveUser(user);
 	}
-	
-	public boolean findUser(String name, String password){
+
+	public boolean login(String name, String password){
+		System.out.println(this.userDao.searchUser(name, password)+ "search usr");
 		return this.userDao.searchUser(name, password);
 	}
-	
+
 	public boolean findEmail(String email){
 		return this.userDao.searchEmail(email);
 	}
+
 }

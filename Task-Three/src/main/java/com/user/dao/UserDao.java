@@ -29,6 +29,7 @@ public class UserDao {
 	    user.setPassword(password);
 
 	    List<User> existUserObj = this.hibernateTemplate.findByExample(user);
+	    
 	    if(existUserObj != null && existUserObj.size() > 0)
 	    {
 	    	isValidUser = true;
